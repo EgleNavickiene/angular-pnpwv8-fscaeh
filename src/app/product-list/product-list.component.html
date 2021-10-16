@@ -1,9 +1,9 @@
-<div>
+<div class="padding-1">
 <h2>Phones</h2>
 </div>
 
-<div *ngFor="let product of products">
-  <hr>
+<div class="product" *ngFor="let product of products">
+  <!-- <hr> -->
   <div class="container-align-center">
     <div>
       <img class="img-logo" src="https://bit.lt/img/BIT_bl-RGB.png" alt="logo">
@@ -25,7 +25,7 @@
     </p>
   </ng-template>
 
-  <div  class="container">
+  <div  class="container flex-wrap">
     <div class="price">
       <p>{{product.price + ' €'}}</p>
     </div>
@@ -45,7 +45,7 @@
       Tweet
     </button>  
   </div> 
-  <hr>
+  <!-- <hr> -->
 </div>
 <!-- 
 Copyright Google LLC. All Rights Reserved.

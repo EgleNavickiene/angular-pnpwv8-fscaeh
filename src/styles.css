@@ -12,6 +12,11 @@ body {
   margin: 0;
 }
 
+router-outlet + *  {
+  padding: 0 16px;
+}
+
+/* flex */
 .container {
   display: flex;
   flex-direction: row;
@@ -19,15 +24,22 @@ body {
 
 .container-align-center {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: baseline;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-
-router-outlet + *  {
-  padding: 0 16px;
+.flex-wrap {
+  flex-wrap: wrap;
 }
+
+/* ---nepadaro---  */
+.app-top-bar {
+  flex-direction: row;
+  flex-wrap: wrap !important;
+}
+
 
 /* images */
 .img-logo {
@@ -60,6 +72,9 @@ h1, h2 {
   margin: 0 1em;
   font-size: 1.2em;    
   font-weight: bold;
+}
+.padding-1 {
+  padding: 1em;
 }
 
 p {

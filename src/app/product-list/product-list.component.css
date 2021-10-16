@@ -1,4 +1,9 @@
-
+.product {
+  padding: 1em;
+  border: 1px lightgrey solid;
+  border-radius: 10px;
+  margin: .2em;
+} 
 
 /*
 Copyright Google LLC. All Rights Reserved.
