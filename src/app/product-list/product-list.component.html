@@ -1,14 +1,22 @@
+<div>
 <h2>Phones</h2>
+</div>
 
 <div *ngFor="let product of products">
-  <h3>
-    <a [title]=" 'Kaina: ' + product.price + ' €' ">
-      {{product.name}}
-    </a>
-  </h3>
+  
+  <div class="container-align-center">
+    <div>
+      <img class="img-logo" src="https://bit.lt/img/BIT_bl-RGB.png" alt="logo">
+    </div>
+    <p class="product-title">
+      <a [title]=" 'Kaina: ' + product.price + ' €' ">
+        {{product.name}}
+      </a>
+    </p>
+  </div>
 
   
-  <p *ngIf="product.description, else noDescription">
+  <p class="description" *ngIf="product.description, else noDescription">
     Description: {{ product.description }}
   </p>
 

@@ -17,8 +17,22 @@ body {
   flex-direction: row;
 }
 
+.container-align-center {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin-top: 2rem;
+  margin-bottom: 0;
+ }
+
 router-outlet + *  {
   padding: 0 16px;
+}
+
+/* images */
+.img-logo {
+  max-width: 4rem;
+  margin-right: 0.5rem;
 }
 
 /* Text */
@@ -35,8 +49,19 @@ h1, h2 {
   font-weight: lighter;
 }
 
+.product-title {  
+  font-size: 1.17em;    
+  font-weight: bold;
+  margin-bottom: .2em;
+  margin-top: .5em;
+}
+
 p {
   font-size: 14px;
+}
+
+.description {
+  margin-top: .5em;
 }
 
 /* Hyperlink */
