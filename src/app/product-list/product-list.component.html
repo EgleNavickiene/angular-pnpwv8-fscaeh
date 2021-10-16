@@ -3,7 +3,7 @@
 </div>
 
 <div *ngFor="let product of products">
-  
+  <hr>
   <div class="container-align-center">
     <div>
       <img class="img-logo" src="https://bit.lt/img/BIT_bl-RGB.png" alt="logo">
@@ -12,13 +12,8 @@
       <a [title]=" 'Kaina: ' + product.price + ' €' ">
         {{product.name}}
       </a>
-    </p>
-    
-    
-  </div>
-
-  
-
+    </p>     
+  </div>  
   
   <p class="description" *ngIf="product.description, else noDescription">
     Description: {{ product.description }}
@@ -39,19 +34,18 @@
         <i class="material-icons text-white"> share </i>      
       </a>
       Share to Fb 
-  </button>
+    </button>
 
-  <button (click)="shareTweet()">
-    <i class="material-icons text-white"> share </i>      
-      <a target="_blank"
-        class=""
-        href="tweet">
-      </a>
-    Tweet
-  </button>
-  
+    <button (click)="shareTweet()">
+      <i class="material-icons text-white"> share </i>      
+        <a target="_blank"
+          class=""
+          href="tweet">
+        </a>
+      Tweet
+    </button>  
   </div> 
-
+  <hr>
 </div>
 <!-- 
 Copyright Google LLC. All Rights Reserved.

@@ -21,9 +21,9 @@ body {
   display: flex;
   flex-direction: row;
   align-items: baseline;
-  margin-top: 2rem;
-  margin-bottom: 0;
- }
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 
 router-outlet + *  {
   padding: 0 16px;
@@ -32,7 +32,7 @@ router-outlet + *  {
 /* images */
 .img-logo {
   max-width: 4rem;
-  margin-right: 0.5rem;
+  margin-right: 1rem;
 }
 
 /* Text */
@@ -112,6 +112,7 @@ label {
   color: white;
   border: none;
   margin-right: 0.3rem;
+  margin-bottom: .5rem;
 }
 
 .button:hover, button:hover {
