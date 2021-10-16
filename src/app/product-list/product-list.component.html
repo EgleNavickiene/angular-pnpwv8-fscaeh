@@ -1,4 +1,4 @@
-<h2>Prekės</h2>
+<h2>Phones</h2>
 
 <div *ngFor="let product of products">
   <h3>
@@ -14,23 +14,27 @@
 
   <ng-template #noDescription>
     <p>
-      Nėra aprašymo 
+      No description 
     </p>
   </ng-template>
 
-  <button (click)="shareFb()">
-    <a href=""><i class="material-icons text-white"> share </i>      
-    </a>
-     Share to Fb 
+  <div  class="container">
+    <button (click)="shareFb()">
+      <a href="">
+        <i class="material-icons text-white"> share </i>      
+      </a>
+      Share to Fb 
   </button>
 
   <button (click)="shareTweet()">
-  <i class="material-icons text-white"> share </i>      
-  <a target="_blank"
-  class="twitter-share-button"
-  href="tweet"></a>
-   Tweet
-</button>
+    <i class="material-icons text-white"> share </i>      
+      <a target="_blank"
+        class=""
+        href="tweet">
+      </a>
+    Tweet
+  </button>
+  </div> 
 
 </div>
 <!-- 
