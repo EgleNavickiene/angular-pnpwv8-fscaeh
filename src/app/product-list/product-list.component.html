@@ -13,7 +13,11 @@
         {{product.name}}
       </a>
     </p>
+    
+    
   </div>
+
+  
 
   
   <p class="description" *ngIf="product.description, else noDescription">
@@ -27,6 +31,9 @@
   </ng-template>
 
   <div  class="container">
+    <div class="price">
+      <p>{{product.price + ' €'}}</p>
+    </div>
     <button (click)="shareFb()">
       <a href="">
         <i class="material-icons text-white"> share </i>      
@@ -42,6 +49,7 @@
       </a>
     Tweet
   </button>
+  
   </div> 
 
 </div>
