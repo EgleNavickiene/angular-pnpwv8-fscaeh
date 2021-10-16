@@ -1,0 +1,38 @@
+<h2>Prekės</h2>
+
+<div *ngFor="let product of products">
+  <h3>
+    <a [title]=" 'Kaina: ' + product.price + ' €' ">
+      {{product.name}}
+    </a>
+  </h3>
+
+  
+  <p *ngIf="product.description, else noDescription">
+    Description: {{ product.description }}
+  </p>
+
+  <ng-template #noDescription>
+    <p>
+      Nėra aprašymo
+    </p>
+  </ng-template>
+
+  <button (click)="share()">
+    <a href=""><i class="material-icons text-white"> share </i>      
+    </a>
+     Share to Fb 
+  </button>
+
+  <button (click)="share()">
+  <a href=""><i class="material-icons text-white"> share </i>      
+  </a>
+   Share to Twitter
+</button>
+
+</div>
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
