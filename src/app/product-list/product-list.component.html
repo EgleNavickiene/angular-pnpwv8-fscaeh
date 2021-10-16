@@ -14,20 +14,22 @@
 
   <ng-template #noDescription>
     <p>
-      Nėra aprašymo
+      Nėra aprašymo 
     </p>
   </ng-template>
 
-  <button (click)="share()">
+  <button (click)="shareFb()">
     <a href=""><i class="material-icons text-white"> share </i>      
     </a>
      Share to Fb 
   </button>
 
-  <button (click)="share()">
-  <a href=""><i class="material-icons text-white"> share </i>      
-  </a>
-   Share to Twitter
+  <button (click)="shareTweet()">
+  <i class="material-icons text-white"> share </i>      
+  <a target="_blank"
+  class="twitter-share-button"
+  href="tweet"></a>
+   Tweet
 </button>
 
 </div>

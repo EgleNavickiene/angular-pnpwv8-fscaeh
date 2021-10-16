@@ -10,11 +10,22 @@ import { products } from '../products';
 export class ProductListComponent {
   products = products;
 
-  share() {
-    window.alert('The product has been shared!');
+  shareFb() {
+    //window.alert('The product has been shared!');
     //cia galetu buti modalinis langas
-  }
-}
+
+    let url =
+    'https://facebook.com/sharer.php?display=popup&u=' + window.location.href;
+
+    window.open(url, 'sharer');
+  }  
+
+  shareTweet() {
+    let tweet =  'https://twitter.com/intent/tweet?&url=https://google.com'  + window.location.href;
+  
+    window.open(tweet, 'sharer');
+  } 
+};
 
 
 /*
