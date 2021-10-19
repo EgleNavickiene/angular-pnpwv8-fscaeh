@@ -21,7 +21,7 @@ export class ProductListComponent {
   }  
 
   shareTweet() {
-    let tweet =  'https://twitter.com/intent/tweet?&url=https://google.com'  + window.location.href;
+    let tweet =  'https://twitter.com/intent/tweet?text=links&url='  + window.location.href;
   
     window.open(tweet, 'sharer');
   } 
